@@ -10,7 +10,7 @@ func init() {
 	// TODO: Find better way so all langs are merged automatically and better
 	// tested.
 	for _, sub := range []*map[rune]string{
-		&deSub, &enSub, &esSub, &fiSub, &grSub, &kkSub, &nlSub, &plSub, &svSub, &trSub,
+		&deSub, &enSub, &esSub, &fiSub, &frSub, &grSub, &kkSub, &nlSub, &plSub, &svSub, &trSub,
 	} {
 		for key, value := range defaultSub {
 			(*sub)[key] = value
@@ -30,13 +30,15 @@ var defaultSub = map[rune]string{
 
 var deSub = map[rune]string{
 	'&': "und",
-	'@': "an",
+	'@': "at",
 	'ä': "ae",
 	'Ä': "Ae",
 	'ö': "oe",
 	'Ö': "Oe",
 	'ü': "ue",
 	'Ü': "Ue",
+	'é': "e",
+	'ß': "ss",
 }
 
 var enSub = map[rune]string{
@@ -47,11 +49,62 @@ var enSub = map[rune]string{
 var esSub = map[rune]string{
 	'&': "y",
 	'@': "en",
+	'á': "a",
+	'é': "e",
+	'í': "i",
+	'ó': "o",
+	'ú': "u",
+	'ü': "u",
+	'ñ': "n",
+	'Á': "A",
+	'É': "E",
+	'Í': "I",
+	'Ó': "O",
+	'Ú': "U",
+	'Ü': "U",
+	'Ñ': "N",
 }
 
 var fiSub = map[rune]string{
 	'&': "ja",
 	'@': "at",
+}
+
+var frSub = map[rune]string{
+	'&': "et",
+	'@': "arobase",
+	'à': "a",
+	'â': "a",
+	'æ': "ae",
+	'ç': "c",
+	'é': "e",
+	'è': "e",
+	'ê': "e",
+	'ë': "e",
+	'î': "i",
+	'ï': "i",
+	'ô': "o",
+	'œ': "oe",
+	'ù': "u",
+	'û': "u",
+	'ü': "u",
+	'ÿ': "y",
+	'À': "A",
+	'Â': "A",
+	'Æ': "Ae",
+	'Ç': "C",
+	'É': "E",
+	'È': "E",
+	'Ê': "E",
+	'Ë': "E",
+	'Î': "I",
+	'Ï': "I",
+	'Ô': "O",
+	'Œ': "Oe",
+	'Ù': "U",
+	'Û': "U",
+	'Ü': "U",
+	'Ÿ': "Y",
 }
 
 var grSub = map[rune]string{
