@@ -4,10 +4,10 @@ slug
 Package `slug` generate slug from unicode string, URL-friendly slugify with
 multiple languages support.
 
-[![GoDoc](https://godoc.org/github.com/gosimple/slug?status.png)](https://godoc.org/github.com/gosimple/slug)
+[![GoDoc](https://godoc.org/github.com/xzyfer/slug?status.png)](https://godoc.org/github.com/xzyfer/slug)
 [![Build Status](https://travis-ci.com/gosimple/slug.svg?branch=master)](https://travis-ci.com/gosimple/slug)
 
-[Documentation online](http://godoc.org/github.com/gosimple/slug)
+[Documentation online](http://godoc.org/github.com/xzyfer/slug)
 
 ## Example
 
@@ -16,7 +16,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/gosimple/slug"
+	"github.com/xzyfer/slug"
 )
 
 func main() {
@@ -46,11 +46,11 @@ func main() {
 ```
 
 ### Requests or bugs?
-<https://github.com/gosimple/slug/issues>
+<https://github.com/xzyfer/slug/issues>
 
 ## Installation
 ```sh
-go get -u github.com/gosimple/slug
+go get -u github.com/xzyfer/slug
 ```
 
 ## License

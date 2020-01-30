@@ -12,7 +12,7 @@ Example:
 	package main
 
 	import(
-		"github.com/gosimple/slug"
+		"github.com/xzyfer/slug"
 		"fmt"
 	)
 
@@ -59,6 +59,6 @@ Example:
 
 Requests or bugs?
 
-https://github.com/gosimple/slug/issues
+https://github.com/xzyfer/slug/issues
 */
 package slug
